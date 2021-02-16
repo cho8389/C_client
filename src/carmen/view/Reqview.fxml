@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carmen.view.ReqController">
+   <children>
+      <TableView fx:id="reqtable" prefHeight="3000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="ordreq_idColumn" editable="false" prefWidth="75.0" text="신청번호" visible="false" />
+          <TableColumn fx:id="emp_idColumn" editable="false" prefWidth="75.0" text="신청자" />
+          <TableColumn fx:id="ordreq_dateColumn" editable="false" prefWidth="75.0" text="신청일" />
+            <TableColumn fx:id="ordreq_edateColumn" editable="false" prefWidth="75.0" text="납기일" />
+            <TableColumn fx:id="ordreq_customerColumn" editable="false" prefWidth="75.0" text="고객상호" />
+            <TableColumn fx:id="ordreq_regionColumn" editable="false" prefWidth="75.0" text="지역" />
+            <TableColumn fx:id="ordreq_nameColumn" editable="false" prefWidth="75.0" text="품명" />
+            <TableColumn fx:id="ordreq_purchaseColumn" editable="false" prefWidth="75.0" text="매입원" />
+            <TableColumn fx:id="ordreq_amountColumn" editable="false" prefWidth="75.0" text="신청수량" />
+            <TableColumn fx:id="ordreq_priceColumn" editable="false" prefWidth="75.0" text="예상단가" />
+            <TableColumn fx:id="ordreq_costColumn" editable="false" prefWidth="75.0" text="원가" />
+            <TableColumn fx:id="ordreq_fullcostColumn" prefWidth="75.0" text="비용" />
+            <TableColumn fx:id="ordreq_typeColumn" editable="false" prefWidth="75.0" text="종류" />
+            <TableColumn fx:id="ordreq_stateColumn" editable="false" prefWidth="75.0" text="상태" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carmen.view.AllListController">
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+	</rowConstraints>
+	<children>
+		<TableView fx:id="reqtable" prefHeight="150.0">
+			<columns>
+				<TableColumn fx:id="ordreq_idColumn" editable="false" prefWidth="75.0" text="신청번호" visible="false" />
+				<TableColumn fx:id="ordreq_emp_idColumn" editable="false" prefWidth="75.0" text="신청자" />
+				<TableColumn fx:id="ordreq_dateColumn" editable="false" prefWidth="75.0" text="신청일" />
+				<TableColumn fx:id="ordreq_edateColumn" editable="false" prefWidth="75.0" text="납기일" />
+				<TableColumn fx:id="ordreq_customerColumn" editable="false" prefWidth="75.0" text="고객상호" />
+				<TableColumn fx:id="ordreq_regionColumn" editable="false" prefWidth="75.0" text="지역" />
+				<TableColumn fx:id="ordreq_nameColumn" editable="false" prefWidth="75.0" text="품명" />
+				<TableColumn fx:id="ordreq_purchaseColumn" editable="false" prefWidth="75.0" text="매입원" />
+				<TableColumn fx:id="ordreq_amountColumn" editable="false" prefWidth="75.0" text="신청수량" />
+				<TableColumn fx:id="ordreq_priceColumn" editable="false" prefWidth="75.0" text="예상단가" />
+				<TableColumn fx:id="ordreq_costColumn" editable="false" prefWidth="75.0" text="원가" />
+				<TableColumn fx:id="ordreq_fullcostColumn" prefWidth="75.0" text="비용" />
+				<TableColumn fx:id="ordreq_typeColumn" editable="false" prefWidth="75.0" text="종류" />
+				<TableColumn fx:id="ordreq_stateColumn" editable="false" prefWidth="75.0" text="상태" />
+			</columns>
+			<columnResizePolicy>
+				<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+			</columnResizePolicy>
+		</TableView>
+		<TableView fx:id="ordtable" prefHeight="150.0" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn fx:id="ord_idColumn" editable="false" prefWidth="75.0" text="신청번호" visible="false" />
+            <TableColumn fx:id="ord_ordreq_idColumn" editable="false" prefWidth="75.0" text="발주번호" visible="false" />
+            <TableColumn fx:id="ord_emp_idColumn" editable="false" prefWidth="75.0" text="발주자" />
+            <TableColumn fx:id="ord_dateColumn" editable="false" prefWidth="75.0" text="발주일" />
+            <TableColumn fx:id="ord_amountColumn" editable="false" prefWidth="75.0" text="발주 수량" />
+            <TableColumn fx:id="ord_costColumn" editable="false" prefWidth="75.0" text="원가" />
+            <TableColumn fx:id="ord_priceColumn" editable="false" prefWidth="75.0" text="발주액" />
+            <TableColumn fx:id="ord_indateColumn" editable="false" prefWidth="75.0" text="입고일" />
+            <TableColumn fx:id="ord_inamountColumn" editable="false" prefWidth="75.0" text="입고 수량" />
+            <TableColumn fx:id="ord_stateColumn" editable="false" prefWidth="75.0" text="상태" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="paytable" prefHeight="150.0" GridPane.rowIndex="2">
+        <columns>
+            <TableColumn fx:id="pay_idColumn" editable="false" prefWidth="75.0" text="결제번호" visible="false" />
+            <TableColumn fx:id="pay_ordreq_idColumn" editable="false" prefWidth="75.0" text="신청번호" visible="false" />
+            <TableColumn fx:id="pay_emp_idColumn" editable="false" prefWidth="75.0" text="결제자" />
+            <TableColumn fx:id="pay_dateColumn" editable="false" prefWidth="75.0" text="결제일" />
+            <TableColumn fx:id="pay_priceColumn" editable="false" prefWidth="75.0" text="결제 금액" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="deltable" prefHeight="150.0" GridPane.rowIndex="3">
+        <columns>
+            <TableColumn fx:id="del_idColumn" editable="false" prefWidth="75.0" text="납품번호" visible="false" />
+            <TableColumn fx:id="del_ordreq_idColumn" editable="false" prefWidth="75.0" text="신청번호" visible="false" />
+            <TableColumn fx:id="del_emp_idColumn" editable="false" prefWidth="75.0" text="납품자" />
+            <TableColumn fx:id="del_dateColumn" editable="false" prefWidth="75.0" text="납품일" />
+            <TableColumn fx:id="del_nameColumn" editable="false" prefWidth="75.0" text="거래상호명" />
+            <TableColumn fx:id="del_customerColumn" editable="false" prefWidth="75.0" text="고객부서" />
+            <TableColumn fx:id="del_amountColumn" editable="false" prefWidth="75.0" text="납품수량" />
+            <TableColumn fx:id="del_costColumn" editable="false" prefWidth="75.0" text="단가" />
+            <TableColumn fx:id="del_priceColumn" editable="false" prefWidth="75.0" text="납품액" />
+            <TableColumn fx:id="del_typeColumn" editable="false" prefWidth="75.0" text="판매방식" />
+            <TableColumn fx:id="del_stateColumn" editable="false" prefWidth="75.0" text="상태" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="caltable" prefHeight="150.0" GridPane.rowIndex="4">
+        <columns>
+            <TableColumn fx:id="cal_idColumn" editable="false" prefWidth="75.0" text="정산번호" visible="false" />
+            <TableColumn fx:id="cal_ordreq_idColumn" editable="false" prefWidth="75.0" text="신청번호" visible="false" />
+            <TableColumn fx:id="cal_emp_idColumn" editable="false" prefWidth="75.0" text="확인자" />
+            <TableColumn fx:id="cal_dateColumn" editable="false" prefWidth="75.0" text="정산일" />
+            <TableColumn fx:id="cal_priceColumn" editable="false" prefWidth="75.0" text="정산액" />
+            <TableColumn fx:id="cal_bankColumn" editable="false" prefWidth="75.0" text="결제은행" />
+            <TableColumn fx:id="cal_nameColumn" editable="false" prefWidth="75.0" text="통장 실제 상호" />
+            <TableColumn fx:id="cal_stateColumn" editable="false" prefWidth="75.0" text="계산서 상태" />
+            <TableColumn fx:id="cal_billColumn" editable="false" prefWidth="75.0" text="계산서 영수증" />
+            <TableColumn fx:id="cal_checkColumn" editable="false" prefWidth="75.0" text="임원 확인" />
+            <TableColumn fx:id="cal_chkdateColumn" editable="false" prefWidth="75.0" text="임원 결제일" />
+            <TableColumn fx:id="cal_noteColumn" editable="false" prefWidth="75.0" text="비고" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+	</children>
+</GridPane>

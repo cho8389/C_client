@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carmen.view.CalController">
+   <children>
+      <TableView fx:id="caltable" prefHeight="3000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="cal_idColumn" editable="false" prefWidth="75.0" text="정산번호" visible="false" />
+            <TableColumn fx:id="ordreq_idColumn" editable="false" prefWidth="75.0" text="신청번호" visible="false" />
+            <TableColumn fx:id="emp_idColumn" editable="false" prefWidth="75.0" text="확인자" />
+            <TableColumn fx:id="cal_dateColumn" editable="false" prefWidth="75.0" text="정산일" />
+            <TableColumn fx:id="cal_priceColumn" editable="false" prefWidth="75.0" text="정산액" />
+            <TableColumn fx:id="cal_bankColumn" editable="false" prefWidth="75.0" text="결제은행" />
+            <TableColumn fx:id="cal_nameColumn" editable="false" prefWidth="75.0" text="통장 실제 상호" />
+            <TableColumn fx:id="cal_stateColumn" editable="false" prefWidth="75.0" text="계산서 상태" />
+            <TableColumn fx:id="cal_billColumn" editable="false" prefWidth="75.0" text="계산서 영수증" />
+            <TableColumn fx:id="cal_checkColumn" editable="false" prefWidth="75.0" text="임원 확인" />
+            <TableColumn fx:id="cal_chkdateColumn" editable="false" prefWidth="75.0" text="임원 결제일" />
+            <TableColumn fx:id="cal_noteColumn" editable="false" prefWidth="75.0" text="비고" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

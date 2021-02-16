@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.lang.*?>
+
+<AnchorPane maxHeight="600.0" maxWidth="600.0" minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carmen.view.LoginController">
+   <children>
+      <TextField fx:id="id" layoutX="216.0" layoutY="417.0" prefHeight="23.0" prefWidth="169.0" />
+      <PasswordField fx:id="password" layoutX="216.0" layoutY="450.0" prefHeight="23.0" prefWidth="169.0" />
+      <Button fx:id="loginbt" layoutX="333.0" layoutY="491.0" mnemonicParsing="false" text="로그인" />
+      <ImageView fitHeight="421.0" fitWidth="493.0" layoutX="55.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/logo.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="idsave" layoutX="216.0" layoutY="486.0" mnemonicParsing="false" text="아이디 저장" />
+      <CheckBox fx:id="autologin" layoutX="216.0" layoutY="505.0" mnemonicParsing="false" text="자동 로그인" />
+   </children>
+</AnchorPane>

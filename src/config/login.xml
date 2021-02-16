@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LoginUser>
+    <Member>
+        <emp_id>test</emp_id>
+        <emp_name>테스트</emp_name>
+        <emp_pw>1234</emp_pw>
+        <emp_title>시험용12</emp_title>
+        <enabled>1</enabled>
+    </Member>
+</LoginUser>

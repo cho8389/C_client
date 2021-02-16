@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.collections.*?>
+
+<GridPane fx:id="reqpane" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carmen.view.ReqPaneController">
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="21.0" />
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="441.0" minWidth="10.0" prefWidth="439.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+		<RowConstraints />
+		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+	</rowConstraints>
+	<children>
+		<Label text="지역" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+		<Label text="시작일" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+		<Label text="종료일" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+		<Label text="종류" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+		<Label text="신청일" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+		<Label text="납기일" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+		<Label text="고객상호" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+		<Label text="품명" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+		<Label text="매입원" GridPane.columnIndex="1" GridPane.rowIndex="22" />
+		<Label text="신청수량" GridPane.columnIndex="1" GridPane.rowIndex="24" />
+		<Label text="원가" GridPane.columnIndex="1" GridPane.rowIndex="28" />
+		<Label text="상태" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+		<Label text="비용" GridPane.columnIndex="1" GridPane.rowIndex="30" />
+		<DatePicker fx:id="ordreq_date" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+		<DatePicker fx:id="ordreq_date_e" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+		<DatePicker fx:id="ordreq_edate" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+		<TextField fx:id="ordreq_customer" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+		<TextField fx:id="ordreq_region" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+		<TextField fx:id="ordreq_name" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+		<TextField fx:id="ordreq_purchase" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+		<TextField fx:id="ordreq_amount" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="25" />
+		<TextField fx:id="ordreq_cost" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="29" />
+		<TextField fx:id="ordreq_fullcost" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="31" />
+		<Label text="신청자" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+		<TextField fx:id="ordreq_emp_id" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+		<TextField fx:id="ordreq_price" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="27" />
+		<Label text="예상단가" GridPane.columnIndex="1" GridPane.rowIndex="26" />
+		<ComboBox fx:id="ordreq_state" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+			<items>
+				<FXCollections fx:factory="observableArrayList">
+					<String fx:value="신청" />
+					<String fx:value="확인" />
+					<String fx:value="발주" />
+					<String fx:value="입고" />
+					<String fx:value="납품" />
+					<String fx:value="정산" />
+				</FXCollections>
+			</items>
+		</ComboBox>
+		<ComboBox fx:id="ordreq_type" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+			<items>
+				<FXCollections fx:factory="observableArrayList">
+					<String fx:value="납품" />
+					<String fx:value="샘플" />
+				</FXCollections>
+			</items>
+		</ComboBox>
+		<ToolBar maxWidth="300.0" minWidth="300.0" prefHeight="40.0" prefWidth="300.0" GridPane.columnSpan="2">
+			<items>
+				<Button fx:id="subbtn1" mnemonicParsing="false" onMouseClicked="#req_search" prefHeight="20.0" prefWidth="65.0" text="검색" />
+				<Button fx:id="subbtn2" mnemonicParsing="false" prefHeight="20.0" prefWidth="65.0" visible="false" />
+				<Button fx:id="subbtn4" mnemonicParsing="false" onMouseClicked="#req_update" prefHeight="20.0" prefWidth="65.0" visible="false" text="수정" />
+				<Button fx:id="subbtn3" mnemonicParsing="false" prefHeight="20.0" prefWidth="65.0" visible="false" text="거래조회" />
+			</items>
+		</ToolBar>
+	</children>
+</GridPane>

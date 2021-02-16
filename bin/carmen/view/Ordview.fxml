@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carmen.view.OrdController">
+   <children>
+      <TableView fx:id="ordtable" prefHeight="3000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="ord_idColumn" editable="false" prefWidth="75.0" text="신청번호" visible="false" />
+            <TableColumn fx:id="ordreq_idColumn" editable="false" prefWidth="75.0" text="발주번호" visible="false" />
+            <TableColumn fx:id="emp_idColumn" editable="false" prefWidth="75.0" text="발주자" />
+            <TableColumn fx:id="ord_dateColumn" editable="false" prefWidth="75.0" text="발주일" />
+            <TableColumn fx:id="ord_amountColumn" editable="false" prefWidth="75.0" text="발주 수량" />
+            <TableColumn fx:id="ord_costColumn" editable="false" prefWidth="75.0" text="원가" />
+            <TableColumn fx:id="ord_priceColumn" editable="false" prefWidth="75.0" text="발주액" />
+            <TableColumn fx:id="ord_indateColumn" editable="false" prefWidth="75.0" text="입고일" />
+            <TableColumn fx:id="ord_inamountColumn" editable="false" prefWidth="75.0" text="입고 수량" />
+            <TableColumn fx:id="ord_stateColumn" editable="false" prefWidth="75.0" text="상태" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

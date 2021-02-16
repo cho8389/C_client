@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.collections.*?>
+
+<GridPane fx:id="del_calinpane" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carmen.view.Del_CalinPaneController">
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="21.0" />
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="441.0" minWidth="10.0" prefWidth="439.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+		<RowConstraints />
+		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+	</rowConstraints>
+	<children>
+		<Label text="계산일" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+		<DatePicker fx:id="cal_date" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+		<Label text="정산액" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+		<TextField fx:id="cal_price" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+		<Label text="결제은행" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+		<TextField fx:id="cal_bank" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+		<Label text="통장실제상호" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+		<TextField fx:id="cal_name" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+		<Label text="계산서상태" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+		<TextField fx:id="cal_state" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+		<Label text="계산서영수증" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+		<TextField fx:id="cal_bill" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+		<Label text="비고" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+		<TextField fx:id="cal_note" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+		<ToolBar maxWidth="300.0" minWidth="300.0" prefHeight="40.0" prefWidth="300.0" GridPane.columnSpan="2">
+			<items>
+				<Button fx:id="subbtn1" mnemonicParsing="false" onMouseClicked="#cal_in" prefHeight="20.0" prefWidth="70.0" text="정산" />
+				<Button fx:id="subbtn2" mnemonicParsing="false" onMouseClicked="#cal_incan" prefHeight="20.0" prefWidth="70.0" text="취소" />
+			</items>
+		</ToolBar>
+	</children>
+</GridPane>
